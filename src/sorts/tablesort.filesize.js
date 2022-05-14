@@ -1,3 +1,5 @@
+var Tablesort = require("../tablesort.js");
+
 // Filesizes. e.g. '5.35 K', '10 MB', '12.45 GB', or '4.67 TiB'
 (function(){
   var compareNumber = function(a, b) {
@@ -42,7 +44,7 @@
         return base;
     }
   },
-  
+
   // Converts filesize to bytes
   // Ex. filesize2num('123 KB') -> 123000
   // Ex. filesize2num('123 KiB') -> 125952
